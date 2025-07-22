@@ -24,7 +24,7 @@ export default function Home() {
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-red-700 font-serif">
-            FocusFlow –
+            FocusFlow 
           </h1>
           <div className="p-2 rounded blink-bg">
             <FaArrowsTurnToDots className="text-white text-2xl sm:text-3xl" />
@@ -39,7 +39,7 @@ export default function Home() {
         {/* Message */}
         <div className="bg-gray-800 rounded-lg p-6 text-center shadow-lg mb-12">
           <p className="text-lg sm:text-xl">
-            You don't have any tasks yet. <br />
+            You do not have any tasks yet. <br />
             Click on the <span className="text-violet-400 font-bold">+</span> button to add one.
           </p>
         </div>
