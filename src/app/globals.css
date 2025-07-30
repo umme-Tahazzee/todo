@@ -1,4 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
 @import "tailwindcss";
+
+
+.cursive-text {
+  font-family: 'Dancing Script', cursive;
+}
+
+
+body {
+  font-family: var(--font-exo);
+}
+
 
 @keyframes blink-bg {
   0%, 100% {

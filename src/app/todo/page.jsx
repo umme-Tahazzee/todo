@@ -15,10 +15,16 @@ export default function Home() {
 
   const addTodo = () => {
     if (input.trim() === '') return;
-    const newTodo = { id: Date.now(), text: input, completed: false };
+    const newTodo = { 
+
+      id: Date.now(), 
+      text: input, 
+      completed: false };
+      
     setTodos((prev) => [...prev, newTodo]);
     setInput('');
   };
+
 
   const removeTodo = (id, index) => {
     const el = listRef.current[index];
@@ -86,7 +92,10 @@ export default function Home() {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 bg-gray-800 border border-gray-700 rounded-md px-3 py-2 sm:px-4 sm:py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500 transition text-sm sm:text-base"
+            className="flex-1 bg-gray-800 border border-gray-700 
+            rounded-md px-3 py-2 sm:px-4 sm:py-3 text-white placeholder-gray-400
+             focus:outline-none focus:ring-2 focus:ring-violet-500 transition text-sm 
+             sm:text-base"
             placeholder="Enter a new task..."
             onKeyDown={(e) => e.key === 'Enter' && addTodo()}
             aria-label="Task input"
